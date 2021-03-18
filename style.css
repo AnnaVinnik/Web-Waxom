@@ -1,1 +1,56 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.carousel-inner img {
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.carousel-indicators .active {
+  margin-top: 5px;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #d3c1ad;
+  background-color: transparent;
+  opacity: 1;
+}
+
+.carousel-control-next-icon {
+  background-image: url(img/right.png);
+  height: 73px;
+  width: 40px;
+}
+
+.carousel-control-prev-icon {
+  background-image: url(img/left.png);
+  height: 73px;
+  width: 40px;
+}
+
+.d-block {
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.header {
+  position: absolute;
+  left: calc(50% - 900px/ 2);
+  color: #1b1919;
+  z-index: 1;
+}
+
+.logo__text {
+  color: white;
+  font-size: 34px;
+}
+/*# sourceMappingURL=style.css.map */
