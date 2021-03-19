@@ -47,15 +47,36 @@ $main-width: 900px;
     left: calc(50% - #{$main-width}/ 2);
     color: rgb(27, 25, 25);
     z-index: 1;
+    
+    justify-content: space-between;
+    &__logo {
+        margin-top: 40px;
+    }
+}
+
+.w {
+    display: flex;
+    width: 100%;
 }
 
 .logo {
     display: flex;
-
     &__text {
         color: white;
         font-size: 34px;
         font-family: 'Raleway', sans-serif;
         font-weight: 400;
+    }
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    &__item {
+        list-style: none;
+    }
+    &__item a {
+        text-decoration: none;
+        color: white;
     }
 }
