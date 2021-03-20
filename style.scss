@@ -1,4 +1,4 @@
-$main-width: 900px;
+$main-width: 1200px;
 
 .carousel-inner img {
     height: 100vh;
@@ -44,19 +44,17 @@ $main-width: 900px;
 
 .header {
     position: absolute;
-    left: calc(50% - #{$main-width}/ 2);
-    color: rgb(27, 25, 25);
     z-index: 1;
-    
-    justify-content: space-between;
-    &__logo {
-        margin-top: 40px;
-    }
-}
-
-.w {
-    display: flex;
     width: 100%;
+    &__container {
+        padding-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        margin-right: 120px;
+    }
 }
 
 .logo {
@@ -64,19 +62,82 @@ $main-width: 900px;
     &__text {
         color: white;
         font-size: 34px;
-        font-family: 'Raleway', sans-serif;
+        font-family: "Raleway", sans-serif;
         font-weight: 400;
     }
+}
+
+.heading {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    color: #555555;
+}
+
+.description {
+    font-family: "Montserrat", sans-serif;
+    color: #8c8c8c;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
 }
 
 .main-nav {
     display: flex;
     justify-content: space-between;
+    flex-grow: 1;
+    margin-bottom: 0;
+    padding-left: 0;
     &__item {
         list-style: none;
+    }
+    &__item a:hover {
+        color: #c7b299;
     }
     &__item a {
         text-decoration: none;
         color: white;
+    }
+}
+
+.user-nav {
+    width: 60px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    &__img:hover path {
+        fill: #c7b299;
+    }
+}
+
+.realizations {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    &__img {
+        margin-bottom: 29px;
+    }
+    &__item {
+        text-align: center;
+        text-decoration: none;
+        flex-grow: 1;
+        flex-basis: calc(#{$main-width}/ 4);
+    }
+    &__item:hover &__heading,
+    &__item:hover &__img path,
+    &__item:hover &__line path {
+        color: #c7b299;
+        fill: #c7b299;
+    }
+    &__heading {
+        font-size: 22px;
+        margin-bottom: 19px;
+    }
+    &__description {
+        font-size: 14px;
+        line-height: 24px;
     }
 }
