@@ -136,7 +136,7 @@
   fill: #c7b299;
 }
 
-.realizations {
+.constituents {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,12 +147,12 @@
   padding-bottom: 80px;
 }
 
-.realizations__img {
+.constituents__img {
   margin-bottom: 29px;
   height: 49px;
 }
 
-.realizations__item {
+.constituents__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,19 +172,19 @@
       flex-basis: calc(1200px/ 4);
 }
 
-.realizations__item:hover .realizations__heading,
-.realizations__item:hover .realizations__img path,
-.realizations__item:hover .realizations__line path {
+.constituents__item:hover .constituents__heading,
+.constituents__item:hover .constituents__img path,
+.constituents__item:hover .constituents__line path {
   color: #c7b299;
   fill: #c7b299;
 }
 
-.realizations__heading {
+.constituents__heading {
   font-size: 22px;
   margin-bottom: 19px;
 }
 
-.realizations__description {
+.constituents__description {
   font-size: 14px;
   line-height: 24px;
 }
