@@ -213,6 +213,16 @@
 
 .realizations__img-left {
   left: calc((100vw - 1200px)/2);
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+.realizations__img-left:hover {
+  left: calc(100vw/2 - 770px/2 - 200px);
+  z-index: 2;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  padding-left: 200px;
 }
 
 .realizations__img-center {
