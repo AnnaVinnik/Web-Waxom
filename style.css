@@ -92,6 +92,7 @@
   font-size: 16px;
   line-height: 28px;
   font-weight: 300;
+  text-align: center;
 }
 
 .main-nav {
@@ -187,5 +188,39 @@
 .constituents__description {
   font-size: 14px;
   line-height: 24px;
+}
+
+.realizations__wrapper {
+  background-color: #fbfaf8;
+  padding-top: 83px;
+  position: relative;
+}
+
+.realizations__description {
+  width: 65%;
+  margin: 0 auto;
+  margin-top: 16px;
+}
+
+.realizations__screenshots {
+  padding-bottom: 522px;
+}
+
+.realizations__img {
+  position: absolute;
+  bottom: 0;
+}
+
+.realizations__img-left {
+  left: calc((100vw - 1200px)/2);
+}
+
+.realizations__img-center {
+  z-index: 1;
+  left: calc(100vw/2 - 770px/2);
+}
+
+.realizations__img-right {
+  right: calc((100vw - 1200px)/2);
 }
 /*# sourceMappingURL=style.css.map */

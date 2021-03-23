@@ -81,6 +81,7 @@ $main-width: 1200px;
     font-size: 16px;
     line-height: 28px;
     font-weight: 300;
+    text-align: center;
 }
 
 .main-nav {
@@ -143,5 +144,35 @@ $main-width: 1200px;
     &__description {
         font-size: 14px;
         line-height: 24px;
+    }
+}
+
+.realizations {
+    &__wrapper {
+        background-color: #fbfaf8;
+        padding-top: 83px;
+        position: relative;
+    }
+    &__description {
+        width: 65%;
+        margin: 0 auto;
+        margin-top: 16px;
+    }
+    &__screenshots {
+        padding-bottom: 522px;
+    }
+    &__img {
+        position: absolute;
+        bottom: 0;
+    }
+    &__img-left {
+        left: calc((100vw - #{$main-width})/2);
+    }
+    &__img-center {
+        z-index: 1;
+        left: calc(100vw/2 - 770px/2);
+    }
+    &__img-right {
+        right: calc((100vw - #{$main-width})/2);
     }
 }
