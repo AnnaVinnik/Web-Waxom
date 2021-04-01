@@ -1,41 +1,5 @@
-$main-width: 1200px;
-
-.carousel-inner img {
-    height: 100vh;
-    object-fit: cover;
-}
-
-.carousel-indicators [data-bs-target] {
-    width: 11px;
-    height: 11px;
-    border-radius: 50%;
-    opacity: 0.5;
-}
-
-.carousel-indicators .active {
-    margin-top: 5px;
-    width: 15px;
-    height: 15px;
-    border: 2px solid #d3c1ad;
-    background-color: transparent;
-    opacity: 1;
-}
-
-.carousel-control-next-icon {
-    background-image: url(img/right.png);
-    height: 73px;
-    width: 40px;
-}
-
-.carousel-control-prev-icon {
-    background-image: url(img/left.png);
-    height: 73px;
-    width: 40px;
-}
-
-.d-block {
-    filter: brightness(40%);
-}
+@import "var";
+@import "carousel";
 
 .container {
     width: $main-width;
@@ -125,7 +89,7 @@ $main-width: 1200px;
     display: flex;
     justify-content: space-between;
 
-    &__img:hover path {
+    &__img:hover path{
         fill: #c7b299;
     }
 }
@@ -247,4 +211,8 @@ $main-width: 1200px;
     &__button:hover {
         transform: rotate(360deg);
     }
+}
+
+.projects {
+    padding-top: 81px;
 }

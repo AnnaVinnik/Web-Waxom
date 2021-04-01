@@ -20,6 +20,10 @@
   opacity: 1;
 }
 
+.carousel-control-next, .carousel-control-prev {
+  z-index: 0;
+}
+
 .carousel-control-next-icon {
   background-image: url(img/right.png);
   height: 73px;
@@ -323,5 +327,9 @@
 .theme__button:hover {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
+}
+
+.projects {
+  padding-top: 81px;
 }
 /*# sourceMappingURL=style.css.map */
