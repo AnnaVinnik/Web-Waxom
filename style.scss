@@ -2,7 +2,7 @@
 @import "carousel";
 
 .container {
-    width: $main-width;
+    max-width: $main-width;
     margin: 0 auto;
 }
 
@@ -10,8 +10,13 @@
     position: absolute;
     z-index: 1;
     width: 100%;
+    left: 0;
+    &__wrapper {
+        max-width: $main-width;
+        position: relative;
+    }
     &__container {
-        padding-top: 40px;
+        padding: 40px 20px 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
