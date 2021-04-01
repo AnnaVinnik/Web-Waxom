@@ -1,6 +1,5 @@
-$main-width: 1200px;
-
-@import "carousel"
+@import "var";
+@import "carousel";
 
 .container {
     width: $main-width;
