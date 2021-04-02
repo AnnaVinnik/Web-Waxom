@@ -137,7 +137,6 @@
     &__wrapper {
         background-color: #fbfaf8;
         padding-top: 83px;
-        position: relative;
     }
     &__description {
         width: 65%;
@@ -146,13 +145,14 @@
     }
     &__screenshots {
         padding-bottom: 522px;
+        position: relative;
     }
     &__img {
         position: absolute;
         bottom: -1px;
     }
     &__img-left {
-        left: calc((100vw - #{$main-width}) / 2);
+        left: 0;
         transition: all ease 1s;
         &:hover {
             left: calc(50vw - (770px) / 2 - 200px);
@@ -164,7 +164,7 @@
     }
     &__img-center {
         z-index: 1;
-        left: calc(100vw / 2 - 770px / 2);
+        left: $main-width/2 - 770px/2;
         transition: all ease 1s;
         &:hover {
             transform: scale(1.3);
@@ -172,7 +172,7 @@
         }
     }
     &__img-right {
-        right: calc((100vw - #{$main-width}) / 2);
+        right: 0;
         transition: all ease 1s;
         &:hover {
             right: calc(50vw - (770px) / 2 - 125px);

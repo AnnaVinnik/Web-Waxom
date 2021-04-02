@@ -226,7 +226,6 @@
 .realizations__wrapper {
   background-color: #fbfaf8;
   padding-top: 83px;
-  position: relative;
 }
 
 .realizations__description {
@@ -237,6 +236,7 @@
 
 .realizations__screenshots {
   padding-bottom: 522px;
+  position: relative;
 }
 
 .realizations__img {
@@ -245,7 +245,7 @@
 }
 
 .realizations__img-left {
-  left: calc((100vw - 1200px) / 2);
+  left: 0;
   -webkit-transition: all ease 1s;
   transition: all ease 1s;
 }
@@ -261,7 +261,7 @@
 
 .realizations__img-center {
   z-index: 1;
-  left: calc(100vw / 2 - 770px / 2);
+  left: 215px;
   -webkit-transition: all ease 1s;
   transition: all ease 1s;
 }
@@ -273,7 +273,7 @@
 }
 
 .realizations__img-right {
-  right: calc((100vw - 1200px) / 2);
+  right: 0;
   -webkit-transition: all ease 1s;
   transition: all ease 1s;
 }
